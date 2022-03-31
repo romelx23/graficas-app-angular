@@ -1,0 +1,16 @@
+<div class="w-full">
+  <div style="display: block">
+    <canvas
+      baseChart
+      [data]="barChartData"
+      [options]="barChartOptions"
+      [type]="barChartType"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)"
+    >
+    </canvas>
+  </div>
+  <button (click)="randomize()" class="rounded-md bg-blue-500 p-3 float-right">
+    Actualizar
+  </button>
+</div>

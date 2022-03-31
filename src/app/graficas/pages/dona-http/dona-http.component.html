@@ -1,0 +1,11 @@
+<h1 class="text-2xl my-3">Redes sociales más usadas</h1>
+<div class="w-72 h-14 bg-blue-500 border flex items-center px-4 rounded-md animate-pulse"
+*ngIf="doughnutChartLabels.length===0; else divGrafica"
+>
+    <h1>Cargando Data...</h1>
+</div>
+<ng-template #divGrafica>    
+    <div class="w-96" #divGrafica>
+        <app-grafica-barra [tipo]="'doughnut'" [barChartData]="doughnutChartData"></app-grafica-barra>
+    </div>
+</ng-template>

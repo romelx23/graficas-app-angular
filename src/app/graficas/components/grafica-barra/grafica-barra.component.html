@@ -1,0 +1,13 @@
+<div [class]="['w-full']">
+  <div style="display: block">
+    <canvas
+      baseChart
+      [data]="barChartData"
+      [options]="{ responsive: true, indexAxis: axis }"
+      [type]="tipo"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)"
+    >
+    </canvas>
+  </div>
+</div>

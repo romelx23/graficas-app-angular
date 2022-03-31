@@ -1,0 +1,5 @@
+<li class="w-full border list-none my-3 md:w-72 rounded">
+    <ul [routerLink]="item.ruta" *ngFor="let item of menu" class="link" routerLinkActive="active" >
+        {{item.texto}}
+    </ul>
+</li>

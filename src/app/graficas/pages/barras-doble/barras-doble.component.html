@@ -1,0 +1,19 @@
+<h1 class="text-xl">Gráficas Dobles</h1>
+<hr class="my-2">
+<div class="flex w-full gap-2 flex-wrap">
+    <div class="w-full">
+        <h2 class="font-semibold">Gráfica 1</h2>
+        <div class="w-4/5">
+            <app-grafica-barra [axis]="'y'" [barChartData]="productoData"></app-grafica-barra>
+        </div>
+    </div>
+    <div class="w-full">
+        <h2 class="font-semibold">Gráfica 2</h2>
+        <div class="w-4/5">
+            <app-grafica-barra [axis]="'x'" [barChartData]="proveedoresData"></app-grafica-barra>
+        </div>
+    </div>
+    <div class="">
+        <h1>Informacion en billones de usuarios</h1>
+    </div>
+</div>
